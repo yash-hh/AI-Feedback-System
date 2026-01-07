@@ -1,0 +1,17 @@
+# Secrets
+.env
+backend/.env
+
+# Python
+venv/
+__pycache__/
+*.pyc
+
+# Database (Do NOT upload data)
+*.db
+*.sqlite3
+database/
+
+# Node modules (Too big to upload)
+node_modules/
+frontend/node_modules/
