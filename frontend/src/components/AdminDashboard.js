@@ -3,7 +3,7 @@ import axios from 'axios';
 
 const AdminDashboard = () => {
   
-  const API_URL = 'http://localhost:8001/api/admin/reviews';
+  const API_URL = 'https://ai-feedback-system1.onrender.com/api/admin/reviews';
   
   const [reviews, setReviews] = useState([]);
 
