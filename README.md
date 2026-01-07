@@ -49,7 +49,7 @@ The application follows a decoupled client-server architecture:
 │
 └── README.md               # Project Documentation
 
-### 🧪 Research Module: Prompt Engineering
+🧪 Research Module: Prompt Engineering
 Located in notebooks/, this module explores how different prompting strategies affect LLM performance on the Yelp Reviews dataset.
 
 Key Experiments:
@@ -62,7 +62,7 @@ Chain-of-Thought (CoT): Step-by-step reasoning for complex sentiment extraction.
 
 Results: The experiments demonstrated that Few-Shot prompting offered the best balance between token efficiency and accuracy, while Structured Output (JSON mode) was critical for system reliability.
 
-### 💻 Web Application: Installation & Setup
+💻 Web Application: Installation & Setup
 Prerequisites
 Node.js (v14+)
 
