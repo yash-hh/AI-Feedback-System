@@ -2,6 +2,7 @@
 
 An end-to-end AI engineering project featuring a robust research pipeline for text classification and a production-grade web application for automated customer feedback analysis.
 
+
 ## 🚀 Project Overview
 
 This repository contains two distinct but related modules focused on leveraging Large Language Models (LLMs) for sentiment analysis:
@@ -10,6 +11,11 @@ This repository contains two distinct but related modules focused on leveraging 
 2.  **Full-Stack Feedback System:** A deployed web application allowing users to submit feedback and admins to view real-time AI summaries and actionable insights.
 
 ---
+**Deployed Link -** https://ai-feedback-system-khaki.vercel.app
+
+**AdminDashboard Link -** https://ai-feedback-system1.onrender.com/api/admin/reviews
+
+**UserDashboard Link -** https://ai-feedback-system1.onrender.com/api/feedback
 
 ## 🏗️ Architecture
 
@@ -48,8 +54,9 @@ The application follows a decoupled client-server architecture:
 │   └── Task1_Prompt_Experiments.ipynb  # Comparative Analysis Notebook
 │
 └── README.md               # Project Documentation
+```
 
-🧪 Research Module: Prompt Engineering
+## 🧪 Research Module: Prompt Engineering
 Located in notebooks/, this module explores how different prompting strategies affect LLM performance on the Yelp Reviews dataset.
 
 Key Experiments:
@@ -62,7 +69,7 @@ Chain-of-Thought (CoT): Step-by-step reasoning for complex sentiment extraction.
 
 Results: The experiments demonstrated that Few-Shot prompting offered the best balance between token efficiency and accuracy, while Structured Output (JSON mode) was critical for system reliability.
 
-💻 Web Application: Installation & Setup
+## 💻 Web Application: Installation & Setup
 Prerequisites
 Node.js (v14+)
 
@@ -71,26 +78,34 @@ Python (v3.9+)
 Google Gemini API Key
 
 1. Backend Setup
+# Create python environment
+
 Bash
 
-cd backend
-pip install -r requirements.txt
+`python -m venv even`
+
+`venv/Scripts/activate`
+
+`cd backend` 
+
+`pip install -r requirements.txt`
 
 # Create .env file or export variable (Linux/Mac)
-export GEMINI_API_KEY="your_api_key_here"
+`export GEMINI_API_KEY="your_api_key_here"`
 
 # Run Server
-python main.py
+`python main.py`
 Server runs on: http://localhost:8000
 
 2. Frontend Setup
 Bash
 
-cd frontend
-npm install
+`cd frontend`
+
+`npm install`
 
 # Start Client
-npm start
+`npm start`
 Client runs on: http://localhost:3000
 
 ## ✨ Key Features
@@ -105,6 +120,14 @@ Automated Insights: Raw text is instantly converted into structured summaries.
 Actionable Intelligence: The AI suggests specific operational improvements based on review content.
 
 Visual Analytics: Color-coded cards provide instant sentiment visibility (Green/Yellow/Red).
+
+## 📸 Screenshots
+
+### User Feedback Portal
+![User Interface](screenshoots/user-view.png)
+
+### Admin Insights Dashboard
+![Admin Dashboard](screenshoots/admin-view.png)
 
 🛡️ License
 This project is open-source and available under the MIT License.
